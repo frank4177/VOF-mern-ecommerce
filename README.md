@@ -21,4 +21,4 @@ VOF is a MERN stack ecommerce shoe store that enables users find their favourite
 - Redux
 
 # Live Demo
-[FoodBuzz](https://vofshoes.herokuapp.com/)
+[VOF Shoes](https://vofshoes.herokuapp.com/)
