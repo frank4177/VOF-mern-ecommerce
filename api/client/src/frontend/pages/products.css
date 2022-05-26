@@ -1,0 +1,140 @@
+.Productcontainer{
+
+}
+
+.wrapper{
+    padding: 5%;
+    display: flex;
+}
+
+.ProductImageContainer{
+flex: 1;
+}
+
+.ProductImageContainer img{
+width: 100%;
+height: 90vh;
+object-fit: cover;
+}
+
+.InfoContainer{
+flex: 1;
+padding: 0px 50px;
+}
+
+.InfoContainer h1{
+font-weight: 200;
+font-size: 30px;
+}
+
+.info-desc{
+margin: 20px 0px;
+}
+
+.price{
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.ProductfilterContainer{
+display: flex;
+justify-content: space-between;
+width: 50%;
+margin: 30px 0px;
+}
+
+.Productfilter{
+display: flex;
+align-items: center;
+}
+
+.filterTitle{
+font-size: 20px;
+font-weight: 200;
+}
+
+.filterColor{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+margin: 0px 5px;
+cursor: pointer;
+}
+
+.filterSize{
+margin-left: 10px;
+padding: 5px;
+}
+
+.filterSizeOption{
+
+}
+
+.addContainer{
+display: flex;
+align-items: center;
+width: 50%;
+justify-content: space-between;
+}
+
+.amountContainer{
+display: flex;
+align-items: center;
+font-weight: 700;
+}
+
+.amount{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 30px;
+height: 30px;
+border-radius: 10px;
+margin: 0px 5px;
+border: 1px solid black;
+}
+
+.addContainer button{
+padding: 15px;
+border: 2px solid black;
+background-color: white;
+cursor: pointer;
+font-weight: 500;
+
+}
+
+.addContainer button:hover{
+    background-color:orange;
+}
+
+
+
+/************************** MEDIA QUERIES *****************************/
+
+@media only screen and (max-width: 480px) {
+   .wrapper{
+    padding: 10px;
+    flex-direction: column;
+   }
+
+   .ProductImageContainer img{
+       height: 40vh;
+   }
+
+   .InfoContainer{
+       padding: 10px;
+   }
+
+   .ProductfilterContainer{
+       width: 100%;
+   }
+
+   .addContainer{
+       width: 100%;
+   }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1161px) {
+
+
+}

@@ -1,0 +1,149 @@
+.footer-container{
+    background-color: white;
+    margin-top: 4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 20rem;
+    padding-top: 12px;
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1370px;
+
+}
+
+
+
+.footer-container .vof{
+    flex: 1;
+}
+
+.footer-container .vof p{
+    width: 20rem;
+}
+
+.footer-container .vof h1{
+    margin-bottom: 20px;
+}
+
+.footer-container .vof .icons-container{
+    display: flex;
+}
+
+.footer-container .vof .icons-container .icons{
+   font-size: 25px;
+   margin: 0px 10PX 10PX 0px;
+}
+
+.footer-container .my-acct{
+    flex:1;
+}
+
+
+
+
+.footer-container .info{
+    flex: 1;
+}
+
+.footer-container .info .my-info-menus{
+    width:20rem ;
+}
+
+.footer-container .contact{
+    flex: 1;
+}
+
+
+ul{
+    font-size: 13px;
+    list-style: none;
+}
+
+.arrowForward{
+    color: orangered;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+
+.my-acct-menus span:hover{
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.my-info-menus span:hover{
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+p{
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.desc{
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size: 17px;
+}
+
+li{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.payment-icons{
+width: 20rem;
+}
+
+.payment-icons img{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+
+
+
+/******************* MEDIA QUERIES *********************/
+
+@media (max-width: 860px) {
+    .my-acct{
+        display: none;
+    }
+
+    .footer-container .vof p{
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width:480px) {
+    .footer-container{
+        display: grid;
+    }
+}
+
+@media (min-width:480px) and (max-width: 568px)  {
+    .footer-container .vof{
+        display: none;
+    }
+}

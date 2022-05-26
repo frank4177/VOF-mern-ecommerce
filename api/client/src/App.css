@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+body{
+    /* background-color: #eee; */
+    background-color: #fff;
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}

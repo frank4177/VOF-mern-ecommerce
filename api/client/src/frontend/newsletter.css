@@ -1,0 +1,81 @@
+.newsLetter-container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(247, 205, 129);
+    min-height: 30rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1370px;
+
+}
+
+.newsLetter-container h1{
+    font-size: 50px;
+    margin: 15px;
+}
+
+.newsLetter-container .description{
+font-size: 24px;
+font-weight: 300;
+margin-bottom: 20px;
+}
+
+.newsLetter-container .searchForm{
+    width: 50%;
+    height: 3.5rem;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.newsLetter-container h2{
+    padding: 10px;
+    background-color:rgba(4, 172, 4, 0.938);
+    color:white;
+    transition:ease;
+    border-radius: 10px;
+}
+
+.newsLetter-container .searchBox{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.newsLetter-container .searchLogo{
+    font-size: 3.5rem;
+    background-color: orange;
+}
+
+.newsLetter-container .searchLogo:hover{
+    box-shadow:0 .1rem .5rem orangered;
+}
+
+
+/************** MEDIA QUERIES *******/
+
+@media (max-width:840px) {
+    .newsLetter-container .description{
+        font-size:20px ;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .newsLetter-container .searchForm{
+        width: 80%;
+    }
+}
+
+@media (max-width:480px) {
+    .newsLetter-container h1{
+        font-size:40px ;
+    }
+}

@@ -1,0 +1,374 @@
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --outline-hover:.2rem solid var(--black) ;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --light-color:#666;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1)
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    scrollbar-color: orange;
+}
+
+.containner{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 5%;
+    top:0; left: 0; right: 0;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1370px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar .logo-container .logo{
+    margin-right: 1.5rem;
+    color: orangered;
+    cursor: pointer;
+}
+
+.navbar .huo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.navbar .huo .cart-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+}
+
+.navbar .huo .cart-wrap .cart-text{
+font-size: 15px;
+margin-left: 10px;
+}
+
+
+.navbar .huo .cart-wrap .badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .huo .cart-wrap .badge .cartColor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/************ MEDIA QUERY ***********/
+
+@media (max-width: 480px) {
+    .navbar .huo .cart-wrap .cart-text{
+        display: none;
+    }
+}
+
+
+
+
+/*############################ SEARCH BAR START #####################*/
+
+.navbar form{
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    height: 3.5rem;
+}
+
+.navbar form input{
+    width: 100%;
+    outline: none;
+    border: 2px solid lightgray;
+}
+
+.navbar form button{
+    border: none;
+}
+
+.navbar form .search-icon{
+    background-color:orange;
+    color: black;
+    font-size: 3.5rem;
+    transition: all 0.6s ease;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+
+
+
+/*###################* SEARCH BAR END ##################################*/
+
+
+
+
+/*###################* NAV LINKS START ##################################*/
+
+.menu 
+{
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu > .li, .menu > a{
+    display: inline-block;
+}
+
+.menu a{
+    color: black;
+    display: block;
+    margin: 5px 1.5rem;
+    font-size: 15px;
+}
+
+
+.menu a:hover{
+    color:orangered;
+}
+
+.subMenu{
+    position: absolute;
+    background-color: white;
+    left: 0;
+    display: none;
+}
+
+.subMenu .li{
+    padding: 10px;
+}
+
+.porel {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .porel{
+    display: flex;
+    flex-direction: column;
+} */
+
+.subMenu2{
+    position: absolute;
+    left: 100%;
+    width: 140px;
+    top: 0;
+    background-color: white;
+    display: none;
+}
+
+.subMenu22{
+    position: absolute;
+    left: 100%;
+    width: 140px;
+    top: 50px;
+    background-color: white;
+    display: none;
+    /* border: 1px solid black; */
+}
+
+
+.menu .li:hover > .subMenu{
+    display: block;
+}
+
+.menu .li:hover > .subMenu2{
+    display: block;
+}
+
+.menu .li:hover > .subMenu22{
+    display: block;
+}
+
+
+/************ MEDIA QUERY ***********/
+
+@media (max-width: 840px) {
+    .menu{
+        display: none;
+    }
+}
+
+
+/*###################* NAV LINKS END ####################################*/
+
+
+
+
+/*###################*MOBILE VIEW HAMBURGER MENU START###################*/
+
+.menu-barss .icon{
+    background: none;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    margin-top: 10px;
+}
+
+.menu-bars{
+    display: flex;
+    display: none;
+}
+
+ .navbar .menu-bars .icon{
+    background: none;
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.nav-menu{
+    background-color:rgb(255, 255, 255);
+    height: calc(90vh - 9rem);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    left: -100%;
+    transition: 850ms;
+    overflow-y: scroll;
+}
+
+.nav-menu.active{
+    left: 0;
+    transition: 350ms;
+
+}
+
+.nav-text{
+font-size: 1.5rem;
+}
+
+/************ MEDIA QUERY ***********/
+
+@media (max-width: 840px) {
+    .menu-bars{
+        display: flex;
+    }
+}
+
+
+/*###################*MOBILE VIEW HAMBURGER MENU END###################*/
+
+
+
+
+
+/*###################*MOBILE VIEW START##################################*/
+
+.mob-menu 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+    width: 250px;
+}
+
+
+.mob-menu a{
+    color: black;
+    margin: 5px 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mob-menu a:hover{
+    color:orangered;
+}
+
+.mob-subMenu{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.porell{
+    display: grid;
+}
+
+.mob-subMenu2{
+    background-color: white;
+    display: block;
+}
+
+.mob-subMenu22{
+    background-color: white;
+    display: block;
+}
+
+.mob-menu li:hover > .mob-subMenu{
+    display: block;
+}
+
+.mob-menu li:hover > .mob-subMenu2{
+    display: block;
+}
+
+.mob-menu li:hover > .mob-subMenu22{
+    display: block;
+}
+
+.cat {
+    border-top: 2px solid rgba(255, 166, 0, 0.432);
+    /* border-bottom: 2px solid rgba(255, 166, 0, 0.432); */
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.cat a{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bold;
+}
+
+.jj{
+    margin: 10px 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.juza .kki{
+    display: flex;
+    justify-content: start;
+    margin: 10px 1.5rem;
+    font-size: 1.9rem;
+    /* margin-left: 30px; */
+}
+
+/*###################**MOBILE VIEW END##################################*/
+
+

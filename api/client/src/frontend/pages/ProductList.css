@@ -1,0 +1,182 @@
+.dresses{
+    margin-top: 80px;
+   margin-left: 5%;
+   
+}
+
+.filterContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+}
+
+.filterText{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.filter select{
+    margin-right: 20px;
+    padding: 8px;
+}
+
+
+
+.ProductFeatured-container{
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right:5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: .1rem .1rem .4rem .1rem gray;
+}
+
+.ProductFeatured-container h1{
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+}
+
+.ProductFeatured-container .ProductImage-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.ProductFeature-images h2{
+    text-align: start;
+    color:black;
+    font-family:sans-serif;
+    font-weight: 300;
+}
+
+.ProductFeature-images{
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    width: 25rem;
+    position: relative; 
+    overflow:hidden ;
+    /* background-color: orange; */
+    margin:1rem auto;
+    
+}
+
+.ProductFeatureCat-icons{
+    position: absolute;
+    top:-170%;
+    left: 0;
+    bottom:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+
+.ProductFeatureCat-icons:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+    top: 0;
+    transition: all 0.8s ease;
+    
+}
+
+.ProductFeatureCat-icons .ProductFeatureIcons{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 10px;
+    transition: all 0.1s ease;
+    
+}
+
+.ProductFeatureCat-icons .ProductFeatureIcons:hover{
+    transform: scale(1.1); 
+    background-color: orange;
+    transition: .2s;
+}
+
+
+/***************** MEDIA QUERIES ***************/
+
+@media only screen and (max-width: 480px) {
+    .ProductFeature-images{
+        width: 80%;
+    }
+
+    .ProductFeatured-container .ProductImage-container{
+        flex-wrap:wrap;
+    }
+
+    .filterContainer{
+        overflow-y: hidden;
+    }
+    
+    ::-webkit-scrollbar {
+     width: 0;  /* Remove scrollbar space */
+     background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+ 
+}
+
+
+@media only screen and (max-width: 480px) {
+    .feature-images{
+        width: 80%;
+    }
+
+    .featured-container .image-container{
+        flex-wrap:wrap;
+    }
+
+   .filterText{
+       display: none;
+   }
+   .filterContainer{
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+ width: 0;  /* Remove scrollbar space */
+ background: transparent;  /* Optional: just make scrollbar invisible */
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1161px) {
+   .ProductFeatured-container .ProductImage-container{
+       flex-wrap: nowrap;
+   }
+
+   .ProductFeature-images{
+       margin: 10px;
+   }
+
+   .ProductFeature-images img{
+       width: 100%;
+   }
+
+   .filterContainer{
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+ width: 0;  /* Remove scrollbar space */
+ background: transparent;  /* Optional: just make scrollbar invisible */
+}
+}

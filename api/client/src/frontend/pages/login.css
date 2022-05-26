@@ -1,0 +1,76 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;background: orange;
+    }
+    
+    .login-wrapper{
+    width:40%;
+    padding: 20px;
+    background-color: white;
+    }
+    
+    .login-wrapper h1{
+    font-size: 24px;
+    font-weight: 300;
+    }
+    
+    .login-wrapper form{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .login-wrapper form input{
+    flex: 1;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    }
+    
+    .login-wrapper form a{
+    font-size: 12px;
+    margin: 5px 0px ;
+    color: black;
+    text-decoration: underline;
+    }
+    
+    /* .login-wrapper form button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    } */
+
+    .login-wrapper form .ko{
+        color: orangered;
+        cursor: not-allowed;
+    }
+
+    .login-wrapper form .io{
+        color: white;
+        cursor: pointer;
+    }
+
+
+    /********************* MEDIA QUERIES *************************/
+
+    @media (max-width:480px) {
+        .login-wrapper{
+            width: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 840px){
+        .login-wrapper{
+            width: 70%;
+        }
+    }

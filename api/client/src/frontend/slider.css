@@ -1,0 +1,99 @@
+
+
+.container{
+    display: flex;
+    /* width: 100%; */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    padding-top: 50px;
+    justify-content:space-between;
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1370px;
+
+}
+
+
+/* ################ CATEGORIES ##############3 */
+
+
+.container .showcase{
+    height:45rem ;
+    width:100%;
+    
+    flex: 4;
+    /* margin-left: 18%; */
+    display: block;
+}
+
+
+
+.slick-prev{
+    z-index: 1;  
+    display: none;
+}
+
+
+.image{
+    width: 100%;
+    height: 45rem;
+}
+
+.image img{
+width: 100%;
+height: 100%;
+}
+
+
+
+
+
+
+/*################### MOBILE SHOWCASE *########################*/
+
+.mobileShowCase{
+    height:40rem ;
+    width:100%;
+    background-color: rgb(247, 205, 129);
+    display: none;
+}
+
+.mobileShowCase-container{
+    background-color:orange ;
+    height: 35rem;
+    border-bottom-left-radius:300rem;
+    border-bottom-right-radius:300rem;
+    margin-left: 5%;
+    margin-right:5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobileShowCase-container h1{
+    font-size: 25px;
+}
+
+.mobileShowCase-container button{
+    background-color: orangered;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+
+
+/*************** MEDIA QUERIES **********************/
+
+@media (max-width:480px) {
+.mobileShowCase{
+    display: block;
+}
+
+.container .showcase{
+    display: none;
+}
+}
